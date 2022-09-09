@@ -23,7 +23,7 @@ public class TreeDecorator extends Tree {
      }
      /**
       * Integrate decor method which uses the decor array list of type string 
-      * and implements a nested for loop which loops for the amount of lines in the lines 
+      * and implements a nested for loop which loops for the amount of lines in the decor 
       * array list and for the amount of characters in the decor array list. 
       * Then checks each character in the decor array list using an if statement
       * to make sure that every character that is not a space in the decor array list is then added 
