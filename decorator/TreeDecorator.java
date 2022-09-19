@@ -43,12 +43,13 @@ public class TreeDecorator extends Tree {
                     //ch represents each decoration
 
                     StringBuilder sb = new StringBuilder(str);
+                    //Using string builder to create a new string that merges the tree and each decoration
 
                     sb.setCharAt(j, ch);
                     str = sb.toString();
 
                     lines.set(i, str);
-                    //sets the specific character of the tree equal to the character in the decor array list
+                    //sets the specific index of the tree equal to the character in the decor array list
                 }
             }
         }
