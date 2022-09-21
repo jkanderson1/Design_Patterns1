@@ -24,7 +24,7 @@ public class Assignment {
  */
     public String toString()
     {
-        return title+description+topic;
+        return title+description+" "+topic;
     }
 
     public Assignment(String title, String description, Topic topic)
