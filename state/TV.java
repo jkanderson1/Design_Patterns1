@@ -14,28 +14,23 @@ public class TV {
     }
 
     public String pressHomeButton() {
-        state.pressHomeButton();
-        return "Loading the Home Screen...";
+        return State.pressHomeButton();
     }
 
     public String pressNetflixButton() {
-        state.pressNetflixButton();
-        return "Loading Netflix...";
+        return State.pressNetflixButton();
     }
 
     public String pressMovieButton() {
-        state.pressMovieButton();
-        return "Loading movies...";
+        return State.pressMovieButton();
     }
 
     public String pressHuluButton() {
-        state.pressHuluButton();
-        return "Loading Hulu...";
+        return State.pressHuluButton();
     }
 
     public String pressTVButton() {
-        state.pressTVButton();
-        return "Loading TV...";
+        return State.pressTVButton();
     }
 
     public void setState(State state){
@@ -53,6 +48,5 @@ public class TV {
     public State getHuluState(){
         return this.huluState;
     }
-
 
 }
