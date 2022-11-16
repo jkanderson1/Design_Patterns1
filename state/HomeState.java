@@ -6,7 +6,8 @@ public class HomeState implements State {
     }
 
     public String pressHomeButton(){
-        return "You are already on the Home page";
+        tv.setState(tv.getHomeState());
+        return "You are on the Home page";
     }
 
     public String pressNetflixButton(){
