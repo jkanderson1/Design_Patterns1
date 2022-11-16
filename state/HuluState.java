@@ -1,4 +1,4 @@
-public class HuluState {
+public class HuluState implements State {
     
     private TV tv;
     private String[] movies = new String[] {
@@ -31,12 +31,12 @@ public class HuluState {
         return "You are already on Hulu";
     }
 
-    public String[] pressMovieButton(){
-        return movies;
+    public String pressMovieButton(){
+        return movies.toString();
     }
 
-    public String[] pressTVButton(){
-        return tvShows;
+    public String pressTVButton(){
+        return tvShows.toString();
     }
 
 

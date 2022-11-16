@@ -6,31 +6,34 @@ public class TV {
     private State huluState;
 
     public TV(){
-        this.netflixState = netflixState;
-        this.huluState = huluState;
         homeState = new HomeState(this);
-        //netflixState = new NetflixState(this);
-       // huluState = new HuluState(this);
+        netflixState = new NetflixState(this);
+        huluState = new HuluState(this);
     }
 
     public String pressHomeButton() {
-        return State.pressHomeButton();
+        state.pressHomeButton();
+        return "Loading Home screen...";
     }
 
     public String pressNetflixButton() {
-        return State.pressNetflixButton();
+        state.pressNetflixButton();
+        return "Loading Netflix...";
     }
 
     public String pressMovieButton() {
-        return State.pressMovieButton();
+        state.pressMovieButton();
+       return "Loading movies...";
     }
 
     public String pressHuluButton() {
-        return State.pressHuluButton();
+        state.pressHuluButton();
+       return "Loading Hulu...";
     }
 
     public String pressTVButton() {
-        return State.pressTVButton();
+        state.pressTVButton();
+       return "Loading tv shows...";
     }
 
     public void setState(State state){
@@ -38,15 +41,15 @@ public class TV {
     }
 
     public State getHomeState(){
-        return this.homeState;
+        return homeState;
     }
 
     public State getNetflixState(){
-        return this.netflixState;
+        return netflixState;
     }
 
     public State getHuluState(){
-        return this.huluState;
+        return huluState;
     }
 
 }

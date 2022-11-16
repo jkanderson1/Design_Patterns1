@@ -1,4 +1,4 @@
-public class NetflixState {
+public class NetflixState implements State {
     
     private TV tv;
     private String[] movies = new String[] {
@@ -32,11 +32,11 @@ public class NetflixState {
         return "You pressed the Hulu button";
     }
 
-    public String[] pressMovieButton(){
-        return movies;
+    public String pressMovieButton(){
+        return movies.toString();
     }
 
-    public String[] pressTVButton(){
-        return tvShows;
+    public String pressTVButton(){
+        return tvShows.toString();
     }
 }
