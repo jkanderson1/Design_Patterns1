@@ -1,7 +1,9 @@
 public class HomeState implements State {
     private TV tv;
+    
 
     public HomeState(TV tv){
+        tv.setState(tv.getHomeState());
         this.tv = tv;
     }
 

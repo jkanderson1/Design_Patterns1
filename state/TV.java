@@ -6,6 +6,7 @@ public class TV {
     private State huluState;
 
     public TV(){
+        state = homeState;
         homeState = new HomeState(this);
         netflixState = new NetflixState(this);
         huluState = new HuluState(this);

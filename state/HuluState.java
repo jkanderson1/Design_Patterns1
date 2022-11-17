@@ -14,6 +14,7 @@ public class HuluState implements State {
     };
 
     public HuluState(TV tv){
+        tv.setState(tv.getHuluState());
         this.tv = tv;
     }
 

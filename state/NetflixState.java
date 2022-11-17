@@ -15,6 +15,7 @@ public class NetflixState implements State {
     };
 
     public NetflixState(TV tv){
+        tv.setState(tv.getNetflixState());
         this.tv = tv;
     }
 
