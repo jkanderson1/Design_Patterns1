@@ -1,3 +1,7 @@
+/**
+ * State interface that initializes all of the states 
+ * @author Jordyn Anderson
+ */
 public interface State {
     public String pressHomeButton();
     public String pressNetflixButton();
